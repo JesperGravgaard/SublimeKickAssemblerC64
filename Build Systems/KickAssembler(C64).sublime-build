@@ -113,6 +113,29 @@
                 "env" : {"CLASSPATH":"$CLASSPATH:/Applications/KickAssembler/KickAss.jar"},
                 "path": "$PATH:/Applications/VICE/X64.app/Contents/MacOS/"
             }
+        },
+
+         {
+            // Build and Run and Debug (F8)
+            "name": "Build and Run and Debug",
+            "cmd": [ "mkdir -p bin && java cml.kickass.KickAssembler '${file_name}' -log 'bin/${file_base_name}_BuildLog.txt' -o 'bin/${file_base_name}_Compiled.prg' -vicesymbols -showmem -symbolfiledir bin -afo :afo=true :breakfile=bin/${file_base_name}_Breakpoints.mon && cat bin/${file_base_name}.vs bin/${file_base_name}_Breakpoints.mon > bin/${file_base_name}_Moncommands.mon && x64 -logfile bin/${file_base_name}_ViceLog.log +confirmexit -moncommands bin/${file_base_name}_Moncommands.mon bin/${file_base_name}_Compiled.prg" ],
+            "windows":
+            {
+                "cmd": [
+                    "(", "if", "not", "exist", "bin", "mkdir", "bin", ")", "&&", 
+                    "(", "java", "cml.kickass.KickAssembler", "${file_name}", "-log", "bin/${file_base_name}_BuildLog.txt", "-o", "bin/${file_base_name}_Compiled.prg", "-vicesymbols", "-showmem", "-symbolfiledir", "bin", "-afo", ":afo=true", ":breakfile=bin/${file_base_name}_Breakpoints.mon", ")", "&&",
+                    "(", "copy", "bin\\\\${file_base_name}.vs", "+", "bin\\\\${file_base_name}_Breakpoints.mon", "bin\\\\${file_base_name}_MonCommands.mon", ")", "&&", 
+                    "(", "x64.exe", "-logfile", "bin\\\\${file_base_name}_RunLog.txt", "+confirmexit", "-moncommands", "bin\\\\${file_base_name}_MonCommands.mon", "bin\\\\${file_base_name}_Compiled.prg", ")"
+                    ], 
+                "env" : {"CLASSPATH":"%CLASSPATH%;C:/C64/Tools/KickAssembler/KickAss.jar"},
+                "path": "%PATH%;C:\\C64\\Tools\\Vice\\;%programfiles%\\Java\\jre7\\bin;%programfiles%\\Java\\jre6\\bin;%programfiles%\\Java\\jre5\\bin;%programfiles(x86)%\\Java\\jre7\\bin;%programfiles(x86)%\\Java\\jre6\\bin;%programfiles(x86)%\\Java\\jre5\\bin;%windir%\\SysWOW64;"
+            },
+            "osx":
+            {
+                "env" : {"CLASSPATH":"$CLASSPATH:/Applications/KickAssembler/KickAss.jar"},
+                "path": "$PATH:/Applications/VICE/X64.app/Contents/MacOS/"
+            }
         }
+       
     ]
 }
