@@ -23,7 +23,7 @@
     },
     "osx":
     {
-        "env" : {"CLASSPATH":"$CLASSPATH:/Applications/KickAssembler/KickAss.jar"}
+        "env" : {"CLASSPATH":"$CLASSPATH:/Applications/KickAssembler/KickAss.jar:/Users/jespergravgaard/c64/kickass-cruncher-plugins-1.0/kickass-cruncher-plugins-1.0.jar"}
     },
     "linux":
     {
@@ -42,7 +42,7 @@
             },
             "osx":
             {
-                "env" : {"CLASSPATH":"$CLASSPATH:/Applications/KickAssembler/KickAss.jar"},
+                "env" : {"CLASSPATH":"$CLASSPATH:/Applications/KickAssembler/KickAss.jar:/Users/jespergravgaard/c64/kickass-cruncher-plugins-1.0/kickass-cruncher-plugins-1.0.jar"},
                 "path": "$PATH:/Applications/VICE/X64.app/Contents/MacOS/"
             }
         },
@@ -59,7 +59,7 @@
             },
             "osx":
             {
-                "env" : {"CLASSPATH":"$CLASSPATH:/Applications/KickAssembler/KickAss.jar"},
+                "env" : {"CLASSPATH":"$CLASSPATH:/Applications/KickAssembler/KickAss.jar:/Users/jespergravgaard/c64/kickass-cruncher-plugins-1.0/kickass-cruncher-plugins-1.0.jar"},
                 "path": "$PATH:/Applications/VICE/X64.app/Contents/MacOS/"
             }
         },
@@ -76,7 +76,7 @@
             },
             "osx":
             {
-                "env" : {"CLASSPATH":"$CLASSPATH:/Applications/KickAssembler/KickAss.jar"},
+                "env" : {"CLASSPATH":"$CLASSPATH:/Applications/KickAssembler/KickAss.jar:/Users/jespergravgaard/c64/kickass-cruncher-plugins-1.0/kickass-cruncher-plugins-1.0.jar"},
                 "path": "$PATH:/Applications/VICE/X64.app/Contents/MacOS/"
             }
         },
@@ -93,7 +93,7 @@
             },
             "osx":
             {
-                "env" : {"CLASSPATH":"$CLASSPATH:/Applications/KickAssembler/KickAss.jar"},
+                "env" : {"CLASSPATH":"$CLASSPATH:/Applications/KickAssembler/KickAss.jar:/Users/jespergravgaard/c64/kickass-cruncher-plugins-1.0/kickass-cruncher-plugins-1.0.jar"},
                 "path": "$PATH:/Applications/VICE/X64.app/Contents/MacOS/"
             }
         },
@@ -110,7 +110,7 @@
             },
             "osx":
             {
-                "env" : {"CLASSPATH":"$CLASSPATH:/Applications/KickAssembler/KickAss.jar"},
+                "env" : {"CLASSPATH":"$CLASSPATH:/Applications/KickAssembler/KickAss.jar:/Users/jespergravgaard/c64/kickass-cruncher-plugins-1.0/kickass-cruncher-plugins-1.0.jar"},
                 "path": "$PATH:/Applications/VICE/X64.app/Contents/MacOS/"
             }
         },
@@ -132,7 +132,7 @@
             },
             "osx":
             {
-                "env" : {"CLASSPATH":"$CLASSPATH:/Applications/KickAssembler/KickAss.jar"},
+                "env" : {"CLASSPATH":"$CLASSPATH:/Applications/KickAssembler/KickAss.jar:/Users/jespergravgaard/c64/kickass-cruncher-plugins-1.0/kickass-cruncher-plugins-1.0.jar"},
                 "path": "$PATH:/Applications/VICE/X64.app/Contents/MacOS/"
             }
         }
