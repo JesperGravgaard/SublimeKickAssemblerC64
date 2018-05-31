@@ -1,6 +1,7 @@
 {
 	"extensions":
 	[
-		"asm"
+		"asm",
+		"inc"
 	]
 }
